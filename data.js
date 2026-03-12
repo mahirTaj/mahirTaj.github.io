@@ -57,7 +57,7 @@ can do.`,
                 "A full-stack real estate marketplace for Bangladesh, connecting landlords and tenants directly while eliminating intermediaries. Features advanced search, interactive maps, trend analytics, and an admin dashboard.",
             tags: ["React.js", "Node.js", "Express", "MongoDB", "Figma"],
             github: "https://github.com/mahirTaj/BashaLagbe---Flat-Room-Rental-Marketplace",
-            demo: "https://bashalagbe-7se3.onrender.com/",
+            demo: "",
             featured: true,
         },
         {
