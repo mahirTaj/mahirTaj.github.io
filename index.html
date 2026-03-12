@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Mahir Tajwar Rahman — CSE Student, NLP Researcher & MERN Developer at BRAC University." />
+    <title>Mahir Tajwar Rahman | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── Navigation ─────────────────────────────────────── -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">MTR<span class="accent">.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link btn-resume" id="resume-link">Résumé ↗</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section id="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name" id="hero-name"></h1>
+            <div class="hero-tagline-wrap">
+                <span class="hero-tagline" id="hero-tagline"></span>
+                <span class="cursor"></span>
+            </div>
+            <p class="hero-bio" id="hero-bio-short"></p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-socials" id="hero-socials"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ── About ──────────────────────────────────────────── -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">01. About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p id="about-bio"></p>
+                    <div class="about-meta" id="about-meta"></div>
+                </div>
+                <div class="about-card-stack fade-in">
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat-projects">9+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Research Works</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">CSE</span>
+                        <span class="stat-label">Major</span>
+                    </div>
+                    <div class="stat-card accent-card">
+                        <span class="stat-number">NLP</span>
+                        <span class="stat-label">Focus Area</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ─────────────────────────────────────────── -->
+    <section id="skills" class="section alt-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">02. Skills</span>
+                <h2 class="section-title">What I Work With</h2>
+            </div>
+            <div class="skills-grid" id="skills-grid"></div>
+        </div>
+    </section>
+
+    <!-- ── Projects ───────────────────────────────────────── -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">03. Projects</span>
+                <h2 class="section-title">Things I've Built</h2>
+            </div>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- ── Experience ─────────────────────────────────────── -->
+    <section id="experience" class="section alt-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">04. Experience</span>
+                <h2 class="section-title">Where I've Been</h2>
+            </div>
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────────────── -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">05. Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-wrapper fade-in">
+                <p class="contact-subtext">
+                    Whether it's a research collaboration, a project idea, or just a chat about
+                    NLP — my inbox is always open.
+                </p>
+                <a href="#" class="btn btn-primary btn-large" id="contact-email-btn">Say Hello ✉</a>
+                <div class="contact-socials" id="contact-socials"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────────────── -->
+    <footer id="footer">
+        <p>Designed &amp; Built by <span class="accent" id="footer-name"></span></p>
+        <p class="footer-sub">Built with HTML · CSS · JS &nbsp;|&nbsp; Hosted on GitHub Pages</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
