@@ -29,6 +29,7 @@ can do.`,
     social: {
         github: "https://github.com/mahirTaj",
         linkedin: "https://www.linkedin.com/in/mahir-tajwar-rahman-5396b31a7/",
+        email: "mailto:tajwarrahmanmahir@gmail.com",
         twitter: "",
         scholar: "",
     },
