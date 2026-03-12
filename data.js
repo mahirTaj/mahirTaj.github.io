@@ -50,6 +50,18 @@ can do.`,
         },
     ],
 
+    /* ── Research ───────────────────────────────────────────── */
+    research: [
+        {
+            title: "Multimodal Hate Speech Detection from Bangla Social Media Posts",
+            description:
+                "Ongoing undergraduate thesis focusing on detecting hate speech in Bangla content by leveraging both text and visual modalities. Exploring deep learning architectures to capture nuanced hate speech effectively.",
+            tags: ["NLP", "Computer Vision", "Multimodal Learning", "Bangla Language", "PyTorch"],
+            link: "#", // Placeholder for publication or report
+            featured: true,
+        },
+    ],
+
     /* ── Projects ───────────────────────────────────────────── */
     projects: [
         {

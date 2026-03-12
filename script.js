@@ -74,6 +74,27 @@ function injectContent() {
       </div>`)
         .join("");
 
+    // Research
+    const researchEl = document.getElementById("research-grid");
+    if (researchEl) {
+        researchEl.innerHTML = d.research
+            .map(r => `
+        <div class="project-card featured fade-in">
+          <div class="project-top">
+            <div class="project-icon">🎓</div>
+            <div class="project-links">
+               <span class="research-tag">Thesis</span>
+            </div>
+          </div>
+          <h3 class="project-title">${r.title}</h3>
+          <p class="project-description">${r.description}</p>
+          <div class="project-tags">
+            ${r.tags.map(t => `<span class="project-tag">${t}</span>`).join("")}
+          </div>
+        </div>`)
+            .join("");
+    }
+
     // Projects
     document.getElementById("projects-grid").innerHTML = d.projects
         .map((p, i) => {
