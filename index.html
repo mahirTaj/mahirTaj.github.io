@@ -1,168 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Mahir Tajwar Rahman — CSE Student, NLP Researcher & MERN Developer at BRAC University." />
-    <title>Mahir Tajwar Rahman | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f6f1">
+  <meta name="description" content="Mahir Tajwar Rahman — MSc student at BRAC University researching multilingual NLP, responsible AI, large language models and multimodal learning. Explore research, projects and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahir Tajwar Rahman — NLP & Multimodal ML Research">
+  <meta property="og:description" content="Researching language technology across languages and modalities. Research, projects and academic experience.">
+  <meta property="og:url" content="https://mahirtaj.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/121459809?v=4">
+  <link rel="canonical" href="https://mahirtaj.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Mahir Tajwar Rahman — Researcher & Engineer</title>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Mahir Tajwar Rahman — home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">Mahir Tajwar Rahman</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+        <nav id="site-nav" class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cv" href="resume.html">CV <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
 
-    <!-- ── Navigation ─────────────────────────────────────── -->
-    <nav id="navbar">
-        <div class="nav-inner">
-            <a href="#hero" class="nav-logo">MTR<span class="accent">.</span></a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#" class="nav-link btn-resume" id="resume-link">Résumé ↗</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ── Hero ───────────────────────────────────────────── -->
-    <section id="hero">
-        <canvas id="particle-canvas"></canvas>
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, I'm</p>
-            <h1 class="hero-name" id="hero-name"></h1>
-            <div class="hero-tagline-wrap">
-                <span class="hero-tagline" id="hero-tagline"></span>
-                <span class="cursor"></span>
-            </div>
-            <p class="hero-bio" id="hero-bio-short"></p>
+    <main id="main">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Computer Science &amp; AI Research <span class="eyebrow-divider"></span> Dhaka, Bangladesh</div>
+            <p class="hero-intro">Hello, I'm</p>
+            <h1 id="hero-title">Mahir Tajwar <span>Rahman<span class="period">.</span></span></h1>
+            <p class="hero-statement">Exploring how language technology can be <em>more multilingual, multimodal &amp; responsible.</em></p>
+            <p class="hero-description">MSc student in Computer Science &amp; Engineering (Data Science) at BRAC University, with a background in NLP, large language models, and building practical software. I care about rigorous evaluation and language technology beyond English.</p>
             <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+              <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+              <a class="button button-outline" href="resume.html">View academic CV <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="hero-socials" id="hero-socials"></div>
+            <div class="hero-quick-links">
+              <a href="https://github.com/mahirTaj" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/mahir-tajwar-rahman-5396b31a7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a href="mailto:tajwarrahmanmahir@gmail.com">Email ↗</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <div class="portrait-grain" aria-hidden="true"></div>
+              <img class="portrait" src="https://avatars.githubusercontent.com/u/121459809?v=4" alt="Profile photo of Mahir Tajwar Rahman" width="540" height="640" fetchpriority="high">
+              <div class="portrait-label"><span class="tiny-dot"></span> Researcher / Engineer <span class="label-year">2026</span></div>
+            </div>
+            <div class="hero-side-note">LANGUAGE <span>×</span> LEARNING <span>×</span> IMPACT</div>
+            <div class="hero-decoration" aria-hidden="true">✳</div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-dot"></div>
-        </div>
-    </section>
+      </section>
 
-    <!-- ── About ──────────────────────────────────────────── -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">01. About</span>
-                <h2 class="section-title">Who I Am</h2>
+      <section class="metrics-band" aria-label="Quick highlights">
+        <div class="container metrics-grid">
+          <div class="metric"><strong>3.95<span>/4.00</span></strong><span>BSc CGPA · BRAC University</span></div>
+          <div class="metric"><strong>02</strong><span>Research papers under review</span></div>
+          <div class="metric"><strong>09</strong><span>Semesters on Vice Chancellor's List</span></div>
+          <div class="metric"><strong>5,000<span>+</span></strong><span>Bangla memes annotated for thesis</span></div>
+        </div>
+      </section>
+
+      <section class="section section-about" id="about" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <div class="section-side">
+            <p class="section-index">01 / INTRODUCTION</p>
+            <h2 class="section-heading" id="about-heading">A little <em>about me.</em></h2>
+          </div>
+          <div class="about-body">
+            <p class="lead">I'm a computer science graduate and emerging researcher drawn to questions at the intersection of <strong>language, representation, and fairness.</strong></p>
+            <p>My work spans Bangla multimodal hate-speech detection, sentiment analysis in Bengali/Banglish/English, and the effects of KV-cache compression on multilingual language-model evaluation. I enjoy grounding research in careful datasets, transparent benchmarks and strong baselines.</p>
+            <p>Alongside research, I build full-stack applications and systems software. I previously supported Algorithms (CSE221) students as a Student Tutor at BRAC University.</p>
+            <div class="interest-wrap" aria-label="Research interests">
+              <span>Natural Language Processing</span><span>Large Language Models</span><span>Multimodal Learning</span><span>Multilingual Evaluation</span><span>Responsible AI</span>
             </div>
-            <div class="about-grid">
-                <div class="about-text fade-in">
-                    <p id="about-bio"></p>
-                    <div class="about-meta" id="about-meta"></div>
+            <div class="mini-quote"><span aria-hidden="true">“</span><p>Good language technology should be evaluated across the languages and people it is meant to serve.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-research" id="research" aria-labelledby="research-heading">
+        <div class="container">
+          <div class="section-header">
+            <div><p class="section-index">02 / RESEARCH &amp; MANUSCRIPTS</p><h2 class="section-heading" id="research-heading">Questions worth <em>investigating.</em></h2></div>
+            <p class="section-header-copy">Recent research in multilingual NLP, evaluation and multimodal understanding. Submission status is shown transparently; the papers below are <strong>not</strong> listed as accepted publications.</p>
+          </div>
+          <div class="research-list">
+            <article class="research-item research-featured">
+              <div class="research-meta"><span class="research-num">R / 01</span><span class="status status-review"><span class="tiny-dot"></span> Under review</span></div>
+              <div class="research-content">
+                <div class="research-main">
+                  <p class="research-category">Multilingual LLM Evaluation · 2026</p>
+                  <h3>Equal Tokens, Unequal Losses: Fixed KV-Cache Budgets Penalize High-Fertility Languages</h3>
+                  <p>Investigating whether fixed KV-cache eviction budgets disproportionately disadvantage high-token-fertility languages in long-context tasks, and examining word-aware eviction as a potential mitigation.</p>
+                  <div class="tag-list"><span>KV-cache eviction</span><span>Tokenizer fertility</span><span>Belebele</span><span>Multilingual evaluation</span></div>
                 </div>
-                <div class="about-card-stack fade-in">
-                    <div class="stat-card">
-                        <span class="stat-number" id="stat-projects">9+</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Research Works</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">CSE</span>
-                        <span class="stat-label">Major</span>
-                    </div>
-                    <div class="stat-card accent-card">
-                        <span class="stat-number">NLP</span>
-                        <span class="stat-label">Focus Area</span>
-                    </div>
+                <div class="research-aside"><span class="aside-label">SUBMISSION</span><strong>ACL Rolling Review</strong><span>October 2026 cycle</span><span class="aside-note">Preferred venue: NAACL</span><span class="aside-small">Uses NVIDIA kvpress with Qwen2.5, Llama-3.2 and Gemma 3. No mitigation result is claimed prior to analysis.</span></div>
+              </div>
+            </article>
+            <article class="research-item">
+              <div class="research-meta"><span class="research-num">R / 02</span><span class="status status-review"><span class="tiny-dot"></span> Under review</span></div>
+              <div class="research-content">
+                <div class="research-main">
+                  <p class="research-category">Bangla NLP · Digital Government · 2026</p>
+                  <h3>Citizen Feedback in Digital Government: Trilingual Sentiment Analysis of Bangladeshi Government Play Store Reviews</h3>
+                  <p>Studying English, Bengali and Banglish feedback from Bangladeshi government apps. Compared nine sentiment classifiers and checked weak labels against human annotation and statistical tests.</p>
+                  <div class="tag-list"><span>37,241 cleaned reviews</span><span>34 government apps</span><span>594 human labels</span><span>0.8691 macro-F1 (BanglaBERT)</span></div>
                 </div>
-            </div>
+                <div class="research-aside"><span class="aside-label">SUBMISSION</span><strong>ICCIT 2026</strong><span>Submitted · Under review</span><span class="aside-small">Analyzes label reliability and language gaps instead of treating automated-label benchmarks as ground truth.</span></div>
+              </div>
+            </article>
+            <article class="research-item">
+              <div class="research-meta"><span class="research-num">R / 03</span><span class="status status-thesis">Undergraduate thesis</span></div>
+              <div class="research-content">
+                <div class="research-main">
+                  <p class="research-category">Multimodal Bangla NLP · Thesis</p>
+                  <h3>BanglaHateMeme: Multimodal Hate Speech and Meme Detection in Bangla Social Media Content</h3>
+                  <p>Curated and annotated more than 5,000 Bangla memes; evaluated BanglaBERT + ViT fusion strategies and vision-language models with five-fold cross-validation, ablations and LoRA fine-tuning.</p>
+                  <div class="tag-list"><span>5,000+ memes</span><span>BanglaBERT + ViT</span><span>Hate speech</span><span>Multimodal fusion</span></div>
+                </div>
+                <div class="research-aside"><span class="aside-label">STATUS</span><strong>Manuscript in preparation</strong><span>Journal manuscript · Not submitted</span><span class="aside-small">Undergraduate thesis supervised by Dr. Farig Yousuf Sadeque.</span></div>
+              </div>
+            </article>
+          </div>
+          <p class="research-footnote">For drafts, collaboration inquiries, or further methodological details, <a href="mailto:tajwarrahmanmahir@gmail.com?subject=Research%20inquiry">get in touch <span aria-hidden="true">↗</span></a></p>
         </div>
-    </section>
+      </section>
 
-    <!-- ── Skills ─────────────────────────────────────────── -->
-    <section id="skills" class="section alt-section">
+      <section class="section section-projects" id="projects" aria-labelledby="projects-heading">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">02. Skills</span>
-                <h2 class="section-title">What I Work With</h2>
-            </div>
-            <div class="skills-grid" id="skills-grid"></div>
+          <div class="section-header">
+            <div><p class="section-index">03 / SELECTED WORK</p><h2 class="section-heading" id="projects-heading">Things I've <em>built.</em></h2></div>
+            <p class="section-header-copy">A few projects across language AI, systems programming, and full-stack engineering.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work</button>
+            <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI &amp; ML</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+            <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          </div>
+          <div class="project-grid" id="project-grid">
+            <article class="project-card" data-category="ai">
+              <div class="project-top"><span class="project-number">01</span><span class="project-type">NLP / DEEP LEARNING</span></div>
+              <h3>Token-Level Named Entity Recognition</h3>
+              <p>Compared RNN, LSTM, GRU and BiLSTM models on an 18-tag BIO news dataset. BiLSTM reached 94.52% accuracy and 95.44% weighted F1, with class-imbalance limitations reflected in macro-F1.</p>
+              <div class="tag-list"><span>BiLSTM</span><span>Sequence labeling</span><span>NLP</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/Token-Level-Multi-Class-Classification-for-NER" target="_blank" rel="noopener noreferrer" aria-label="View named entity recognition project on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card" data-category="systems">
+              <div class="project-top"><span class="project-number">02</span><span class="project-type">OPERATING SYSTEMS</span></div>
+              <h3>VSFS Metadata Journaling</h3>
+              <p>Implemented C-based write-ahead logging for a simple file system, covering atomic file creation, commit records, crash recovery and validation of incomplete transactions.</p>
+              <div class="tag-list"><span>C</span><span>Write-ahead log</span><span>Crash recovery</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/VSFS-Metadata-Journaling" target="_blank" rel="noopener noreferrer" aria-label="View VSFS Metadata Journaling project on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card" data-category="web">
+              <div class="project-top"><span class="project-number">03</span><span class="project-type">FULL-STACK APPLICATION</span></div>
+              <h3>BashaLagbe <span class="project-title-light">/ Rental Marketplace</span></h3>
+              <p>Built a React and Node.js/Express marketplace with MongoDB, JWT authentication, Leaflet maps, comparison tools, filters, analytics and moderation features.</p>
+              <div class="tag-list"><span>React</span><span>Express</span><span>MongoDB</span><span>Leaflet</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/BashaLagbe---Flat-Room-Rental-Marketplace" target="_blank" rel="noopener noreferrer" aria-label="View BashaLagbe on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card" data-category="web">
+              <div class="project-top"><span class="project-number">04</span><span class="project-type">AI-ASSISTED E-COMMERCE</span></div>
+              <h3>NeuraRig <span class="project-title-light">/ PC Store</span></h3>
+              <p>Developed an AI-assisted PC-building and e-commerce experience with a chatbot, role-based administration, and a React/Express/MongoDB stack integrated with the Groq API.</p>
+              <div class="tag-list"><span>React</span><span>Node.js</span><span>Groq API</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/NeuraRig" target="_blank" rel="noopener noreferrer" aria-label="View NeuraRig on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card" data-category="systems">
+              <div class="project-top"><span class="project-number">05</span><span class="project-type">LOW-LEVEL PROGRAMMING</span></div>
+              <h3>Inventory &amp; Sales Management</h3>
+              <p>Created a management system in 8086 assembly with product and stock records, search, sorting, low-stock alerts, sales reporting and transaction undo.</p>
+              <div class="tag-list"><span>8086 assembly</span><span>Inventory</span><span>Systems</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/8086-Assembly-Inventory-Sales-Management-System" target="_blank" rel="noopener noreferrer" aria-label="View assembly inventory project on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card" data-category="ai">
+              <div class="project-top"><span class="project-number">06</span><span class="project-type">MACHINE LEARNING</span></div>
+              <h3>Life Expectancy Prediction</h3>
+              <p>Compared linear regression, decision-tree regression and a neural network on the WHO dataset using KNN imputation and feature preprocessing. Linear regression performed best on the evaluated metrics.</p>
+              <div class="tag-list"><span>Regression</span><span>WHO data</span><span>Python</span></div>
+              <a class="project-link" href="https://github.com/mahirTaj/Life-Expectancy-Prediction" target="_blank" rel="noopener noreferrer" aria-label="View life expectancy prediction project on GitHub">View repository <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <div class="more-work"><p>More experiments and side projects live on GitHub.</p><a href="https://github.com/mahirTaj?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span aria-hidden="true">↗</span></a></div>
         </div>
-    </section>
+      </section>
 
-    <!-- ── Research ─────────────────────────────────────────── -->
-    <section id="research" class="section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">03. Research</span>
-                <h2 class="section-title">Academic Thesis</h2>
-            </div>
-            <div class="research-grid" id="research-grid"></div>
+      <section class="section section-journey" id="journey" aria-labelledby="journey-heading">
+        <div class="container journey-layout">
+          <div class="section-side"><p class="section-index">04 / EXPERIENCE &amp; EDUCATION</p><h2 class="section-heading" id="journey-heading">The path <em>so far.</em></h2><p class="journey-side-copy">A foundation in algorithms and engineering, with a growing focus on multilingual language research.</p></div>
+          <div class="timeline">
+            <div class="timeline-item"><div class="timeline-date">IN PROGRESS</div><div class="timeline-content"><p class="timeline-label">EDUCATION</p><h3>Master of Science, CSE</h3><p class="timeline-org">BRAC University · Data Science specialization</p><p>Currently pursuing graduate study in Computer Science &amp; Engineering.</p></div></div>
+            <div class="timeline-item"><div class="timeline-date">2022 — 2026</div><div class="timeline-content"><p class="timeline-label">EDUCATION</p><h3>Bachelor of Science, CSE</h3><p class="timeline-org">BRAC University · CGPA 3.95 / 4.00</p><p>Graduated with coursework in Algorithms, AI, NLP and Computer Vision.</p></div></div>
+            <div class="timeline-item"><div class="timeline-date">JUL 2025 — SEP 2026</div><div class="timeline-content"><p class="timeline-label">TEACHING</p><h3>Student Tutor · Algorithms (CSE221)</h3><p class="timeline-org">Department of CSE, BRAC University</p><p>Conducted consultation hours and provided academic assistance across four fixed-term appointments (15 hours per week each).</p></div></div>
+            <div class="timeline-item"><div class="timeline-date">2019 — 2021</div><div class="timeline-content"><p class="timeline-label">EDUCATION</p><h3>Higher Secondary Certificate</h3><p class="timeline-org">Adamjee Cantonment College</p><p>Science · GPA 5.00</p></div></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ── Projects ───────────────────────────────────────── -->
-    <section id="projects" class="section alt-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">04. Projects</span>
-                <h2 class="section-title">Things I've Built</h2>
-            </div>
-            <div class="projects-grid" id="projects-grid"></div>
+      <section class="section section-details" id="recognition" aria-labelledby="recognition-heading">
+        <div class="container details-grid">
+          <div class="details-card recognition-card">
+            <p class="section-index">05 / RECOGNITION</p>
+            <h2 class="section-heading small-heading" id="recognition-heading">Recognition &amp; <em>scholarships.</em></h2>
+            <div class="award"><strong>09 semesters</strong><span>Vice Chancellor's List — BRAC University</span></div>
+            <div class="award"><strong>50%</strong><span>BRAC University Merit-Based Scholarship</span></div>
+            <div class="award"><strong>25%</strong><span>Previous Academic Results Scholarship</span></div>
+          </div>
+          <div class="details-card skills-card" id="skills">
+            <p class="section-index">06 / TOOLKIT</p>
+            <h2 class="section-heading small-heading">How I <em>work.</em></h2>
+            <div class="skill-group"><h3>AI &amp; Research</h3><p>NLP, deep learning, multimodal learning, multilingual evaluation, PyTorch</p></div>
+            <div class="skill-group"><h3>Programming</h3><p>Python, C, C++, Java, JavaScript, PHP, SQL</p></div>
+            <div class="skill-group"><h3>Web &amp; Tools</h3><p>React, Node.js, Express.js, MongoDB, Git</p></div>
+            <div class="skill-group"><h3>Languages</h3><p>Bangla, English</p></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ── Experience ─────────────────────────────────────── -->
-    <section id="experience" class="section alt-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">04. Experience</span>
-                <h2 class="section-title">Where I've Been</h2>
-            </div>
-            <div class="timeline" id="timeline"></div>
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-inner">
+          <div><p class="section-index">07 / LET'S CONNECT</p><h2 id="contact-heading">Have an idea worth <em>exploring?</em></h2><p>I'm glad to discuss multilingual NLP, research methods, or thoughtful software collaborations.</p></div>
+          <div class="contact-actions"><a class="button button-light" href="mailto:tajwarrahmanmahir@gmail.com?subject=Hello%20Mahir">Start a conversation <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:tajwarrahmanmahir@gmail.com">tajwarrahmanmahir@gmail.com</a></div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── Contact ────────────────────────────────────────── -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">05. Contact</span>
-                <h2 class="section-title">Let's Connect</h2>
-            </div>
-            <div class="contact-wrapper fade-in">
-                <p class="contact-subtext">
-                    Whether it's a research collaboration, a project idea, or just a chat about
-                    NLP — my inbox is always open.
-                </p>
-                <a href="mailto:tajwarrahmanmahir@gmail.com" class="btn btn-primary btn-large"
-                    id="contact-email-btn">Say Hello ✉</a>
-                <div class="contact-socials" id="contact-socials"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── Footer ─────────────────────────────────────────── -->
-    <footer id="footer">
-        <p>Designed &amp; Built by <span class="accent" id="footer-name"></span></p>
-        <p class="footer-sub">Built with HTML · CSS · JS &nbsp;|&nbsp; Hosted on GitHub Pages</p>
-    </footer>
-
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <footer class="footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">M<span>.</span></a><p>Curiosity, rigor and a little code.<br>© <span id="year">2026</span> Mahir Tajwar Rahman</p></div><div class="footer-links"><a href="https://github.com/mahirTaj" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mahir-tajwar-rahman-5396b31a7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="resume.html">Academic CV ↗</a><a href="#top">Back to top ↑</a></div></div></footer>
+  </div>
 </body>
-
 </html>

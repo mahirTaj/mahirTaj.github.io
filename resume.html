@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic curriculum vitae of Mahir Tajwar Rahman — BRAC University, multilingual NLP and multimodal machine learning research.">
+  <meta name="theme-color" content="#f7f6f1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+  <title>Academic CV — Mahir Tajwar Rahman</title>
+</head>
+<body class="resume-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">M<span>.</span></span><span class="brand-name">Mahir Tajwar Rahman</span></a><nav class="nav" aria-label="Resume navigation" style="display:flex;position:static;flex-direction:row;box-shadow:none;border:0;padding:0;background:transparent"><a href="index.html">← Portfolio</a><a href="mailto:tajwarrahmanmahir@gmail.com">Contact ↗</a></nav></div></header>
+<main id="main" class="resume-wrap">
+  <div class="resume-hero"><p class="section-index">ACADEMIC CURRICULUM VITAE · UPDATED NOVEMBER 2026</p><h1>Mahir Tajwar Rahman<span style="color:#db815a">.</span></h1><p>Computer Science &amp; Engineering Graduate · MSc Student (Data Science) · BRAC University</p>
+    <div class="resume-contacts"><span>Dhaka, Bangladesh</span><a href="mailto:tajwarrahmanmahir@gmail.com">tajwarrahmanmahir@gmail.com</a><a href="https://mahirtaj.github.io">mahirtaj.github.io</a><a href="https://github.com/mahirTaj">github.com/mahirTaj</a><a href="https://www.linkedin.com/in/mahir-tajwar-rahman-5396b31a7/">LinkedIn</a></div>
+  </div>
+  <div class="resume-actions"><button class="button button-primary" type="button" onclick="window.print()">Print / Save as PDF ↗</button><a class="button button-outline" href="index.html">← Back to portfolio</a></div>
+  <section class="resume-block"><h2>Academic Profile</h2><p>Computer Science and Engineering graduate of BRAC University with a CGPA of 3.95/4.00, undergraduate tutoring experience in Algorithms, and research interests in Bangla NLP, multimodal machine learning, and multilingual model evaluation.</p><p><strong>Research interests:</strong> Natural language processing · Large language models · Multimodal learning · Multilingual evaluation · Responsible AI</p></section>
+  <section class="resume-block"><h2>Education</h2>
+    <div class="resume-item"><h3>Master of Science in Computer Science and Engineering</h3><p class="resume-meta">BRAC University · Data Science specialization · In progress</p></div>
+    <div class="resume-item"><h3>Bachelor of Science in Computer Science and Engineering</h3><p class="resume-meta">BRAC University · 2022–2026 · Graduated · CGPA 3.95/4.00</p><p>Relevant coursework: Algorithms, Artificial Intelligence, Natural Language Processing, Computer Vision.</p></div>
+    <div class="resume-item"><h3>Higher Secondary Certificate (HSC), Science</h3><p class="resume-meta">Adamjee Cantonment College · 2019–2021 · GPA 5.00</p></div>
+    <div class="resume-item"><h3>Secondary School Certificate (SSC), Science</h3><p class="resume-meta">Adamjee Cantonment Public School · 2015–2019 · GPA 5.00</p></div>
+  </section>
+  <section class="resume-block"><h2>Teaching Experience</h2><h3>Student Tutor (Undergraduate Teaching Assistant) · BRAC University</h3><p class="resume-meta">Department of Computer Science and Engineering · July 2025 – September 2026</p><p>Conducted consultation hours and academic assistance for Algorithms (CSE221) students across four fixed-term appointments, each specifying 15 hours per week.</p></section>
+  <section class="resume-block"><h2>Research &amp; Manuscripts</h2>
+    <div class="resume-item"><h3>Equal Tokens, Unequal Losses: Fixed KV-Cache Budgets Penalize High-Fertility Languages</h3><p class="resume-meta">Under review · ACL Rolling Review, October 2026 cycle · Preferred venue: NAACL</p><ul><li>Investigates whether fixed KV-cache eviction budgets disadvantage high-token-fertility languages in long-context evaluation.</li><li>Uses NVIDIA kvpress, multilingual Belebele and Qwen2.5, Llama-3.2 and Gemma 3 models for cache eviction and tokenizer-fertility analysis.</li><li>Explores word-aware eviction as a potential mitigation; no outcome is claimed before analysis.</li></ul></div>
+    <div class="resume-item"><h3>Citizen Feedback in Digital Government: Trilingual Sentiment Analysis of Bangladeshi Government Play Store Reviews</h3><p class="resume-meta">Submitted to ICCIT 2026 · Under review</p><ul><li>Cleaned 108,394 collected reviews to 37,241 from 34 government apps across English, Bengali and Banglish; constructed a 501-word and 60-word-pair language lexicon.</li><li>Benchmarked nine classifiers using weak supervision, with validation against 594 human-labeled reviews and statistical comparisons.</li><li>BanglaBERT achieved 0.8691 macro-F1; five other models were statistically tied. Measured language disparities and machine-label validation inflation.</li></ul></div>
+    <div class="resume-item"><h3>BanglaHateMeme: Multimodal Hate Speech and Meme Detection in Bangla Social Media Content</h3><p class="resume-meta">Undergraduate thesis · Journal manuscript in preparation · Supervisor: Dr. Farig Yousuf Sadeque</p><ul><li>Curated and annotated 5,000+ Bangla social-media memes with protected-category, attack-type and subcategory labels.</li><li>Compared BanglaBERT + ViT-Base/16 fusion methods, selecting concatenation and focal loss.</li><li>Benchmarked vision-language models with zero-shot, chain-of-thought and LoRA fine-tuning; used five-fold cross-validation and ablation studies.</li></ul></div>
+  </section>
+  <section class="resume-block"><h2>Selected Technical Projects</h2>
+    <div class="resume-item"><h3>Token-Level Multi-Class Classification for Named Entity Recognition</h3><p>Compared RNN, LSTM, GRU and BiLSTM on an 18-tag BIO news dataset (19,183 train / 4,796 test sentences). BiLSTM achieved 94.52% accuracy, 95.44% weighted F1 and 45.12% macro-F1.</p></div>
+    <div class="resume-item"><h3>VSFS Metadata Journaling</h3><p>Implemented C-based write-ahead logging, atomic file creation, commit records and crash recovery, including incomplete-transaction validation.</p></div>
+    <div class="resume-item"><h3>BashaLagbe — Flat / Room Rental Marketplace</h3><p>Full-stack rental marketplace using React, Node.js/Express, MongoDB, JWT and Leaflet, with filters, analytics and moderation tools.</p></div>
+    <div class="resume-item"><h3>NeuraRig — AI-Integrated PC Store</h3><p>AI-assisted PC builder and e-commerce platform using React, Node.js/Express, MongoDB and Groq API; includes chatbot and role-based administration.</p></div>
+    <div class="resume-item"><h3>Inventory &amp; Sales Management System (8086 Assembly)</h3><p>Product and stock management, sales records, search and sorting, low-stock alerts, reports and transaction undo in 8086 assembly.</p></div>
+    <div class="resume-item"><h3>Life Expectancy Prediction (WHO Dataset)</h3><p>Compared linear regression, decision tree and neural network models with KNN imputation and feature preprocessing; linear regression performed best.</p></div>
+  </section>
+  <section class="resume-block"><h2>Scholarships &amp; Recognition</h2><p>Vice Chancellor's List — 9 semesters · BRAC University Merit-Based Scholarship (50%) · Previous Academic Results Scholarship (25%)</p></section>
+  <section class="resume-block"><h2>Technical Skills</h2><p><strong>Programming:</strong> Python, C, C++, Java, JavaScript, PHP, SQL</p><p><strong>AI &amp; ML:</strong> NLP, machine learning, deep learning, multimodal learning, PyTorch</p><p><strong>Web &amp; tools:</strong> React, Node.js, Express.js, MongoDB, Git</p><p><strong>Certification:</strong> Web Development (Advanced), BRAC University</p><p><strong>Languages:</strong> Bangla, English</p></section>
+  <p class="resume-note">Manuscript status reflects the provided November 2026 CV and should be updated as decisions arrive. This web CV is the most current version published on this site.</p>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><a class="footer-brand" href="index.html">M<span>.</span></a><p>© <span id="year">2026</span> Mahir Tajwar Rahman</p></div><div class="footer-links"><a href="index.html">← Portfolio</a><a href="mailto:tajwarrahmanmahir@gmail.com">Email ↗</a></div></div></footer>
+</body>
+</html>
