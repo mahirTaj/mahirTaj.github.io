@@ -23,7 +23,8 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-shell">
-    <header class="site-header" id="top">
+    <div id="top" aria-hidden="true"></div>
+    <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Mahir Tajwar Rahman — home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">Mahir Tajwar Rahman</span></a>
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
@@ -250,7 +251,17 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="container contact-inner">
           <div><p class="section-index">07 / LET'S CONNECT</p><h2 id="contact-heading">Have an idea worth <em>exploring?</em></h2><p>I'm glad to discuss multilingual NLP, research methods, or thoughtful software collaborations.</p></div>
-          <div class="contact-actions"><a class="button button-light" href="mailto:tajwarrahmanmahir@gmail.com?subject=Hello%20Mahir">Start a conversation <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:tajwarrahmanmahir@gmail.com">tajwarrahmanmahir@gmail.com</a></div>
+          <div class="contact-actions">
+            <button class="button button-light" id="contact-start" type="button" aria-expanded="false" aria-controls="contact-methods">Start a conversation <span aria-hidden="true">↗</span></button>
+            <a class="contact-email" href="mailto:tajwarrahmanmahir@gmail.com">tajwarrahmanmahir@gmail.com</a>
+            <div id="contact-methods" class="contact-methods" hidden>
+              <p class="contact-methods-title">Choose how you'd like to get in touch:</p>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tajwarrahmanmahir%40gmail.com&amp;su=Hello%20Mahir" target="_blank" rel="noopener noreferrer">Compose in Gmail <span aria-hidden="true">↗</span></a>
+              <a href="mailto:tajwarrahmanmahir@gmail.com?subject=Hello%20Mahir">Open your email app <span aria-hidden="true">↗</span></a>
+              <button type="button" id="copy-contact-email">Copy email address <span aria-hidden="true">⧉</span></button>
+              <span id="contact-feedback" class="contact-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
